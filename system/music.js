@@ -44,7 +44,7 @@ module.exports = {
     
     
     
-      queue.textChannel.send(`**STARTED PLAYING** - [${song.title}](${song.url})`)
+      queue.textChannel.send(`**NOW PLAYING** - [${song.title}](${song.url})`)
     
     
   }
