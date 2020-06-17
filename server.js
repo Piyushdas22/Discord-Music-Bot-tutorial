@@ -7,7 +7,7 @@ const { TOKEN, PREFIX } = require("./config.json")
 //CLIENT EVENTS
 client.on("ready", () => {
   console.log('Ready TO play some soft songs')
-  client.user.setActivity("x!help | Musix")
+  client.user.setActivity("m.help | Music")
 })
 
 client.on("warn", info => console.log(info));
@@ -33,7 +33,7 @@ client.on("message", message => {
    if (message.author.bot) return;
   if (!message.guild) return;
   
-  if(message.content.startsWith(PREFIX)) { //IF MESSSAGE STARTS WITH MINE BOT PREFIX
+  if(message.content.startsWith(m.)) { //IF MESSSAGE STARTS WITH MINE BOT PREFIX
     
     const args = message.content.slice(PREFIX.length).trim().split(/ +/) //removing prefix from args
     const command = args.shift().toLowerCase();
